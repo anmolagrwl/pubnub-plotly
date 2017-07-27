@@ -17,7 +17,7 @@ var initData = [{
 }];
 
 var layout = {barmode: "stack"};
-var initGraphOptions = {fileopt : "overwrite", filename : "pubnub-plotly-file", layout: layout};
+var initGraphOptions = {fileopt : "extend", filename : "pubnub-plotly-file", layout: layout};
 
 plotly.plot(initData, initGraphOptions, function (err, msg) {
   if (err) return console.log(err)
@@ -60,18 +60,3 @@ plotly.plot(initData, initGraphOptions, function (err, msg) {
     });
   };
 });
-
-// [
-//     {
-//         "event": "Event1",
-//         "data": 9
-//     },
-//     {
-//         "event": "Event2",
-//         "data": 8
-//     },
-//     {
-//         "event": "Event3",
-//         "data": 7
-//     }
-// ]
